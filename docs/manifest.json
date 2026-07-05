@@ -1,8 +1,8 @@
 {
   "name": "Dr. Hernán Cornejo",
   "short_name": "H. Cornejo",
-  "description": "Sitio oficial del Dr. Hernán Cornejo. Investigador, autor, conferencista y consultor en estrategia, innovación y gestión del cambio.",
-  "lang": "es",
+  "description": "Official website of Dr. Hernán Cornejo. Researcher, author, international speaker, and consultant specializing in strategy, innovation, and change management.",
+  "lang": "en",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
