@@ -11,12 +11,14 @@
 }
 
 :root{
-    --bg:#F7F4EE;
-    --text:#1F1F1F;
-    --text-soft:#4A4A4A;
-    --muted:#7A7A7A;
-    --border:#D9D2C7;
-    --accent:#8A6B3F;
+    --bg: #0a0a0a;
+    --bg-secondary: #141414;
+    --text: #f5f5f5;
+    --text-soft: #b0b0b0;
+    --muted: #6a6a6a;
+    --border: #1a1a1a;
+    --accent: #c9a962;
+    --accent-light: #d4b978;
 }
 
 html{
