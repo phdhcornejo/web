@@ -1,207 +1,210 @@
 /* ================================
    CORNEJO / ONE — DESIGN SYSTEM v4
-   Editorial Heritage (Dark Mode Opt)
+   Editorial Heritage (Premium Dark Edition)
 ================================ */
 
 /* RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root{
-    --bg: #0a0a0a;
-    --bg-secondary: #141414;
-    --text: #f5f5f5;
-    --text-soft: #b0b0b0;
-    --muted: #6a6a6a;
-    --border: #1a1a1a;
-    --accent: #c9a962;
-    --accent-light: #d4b978;
+:root {
+    --bg: #0a0a0a;              /* Fondo ultra oscuro principal */
+    --bg-secondary: #141414;    /* Fondo secundario para contraste opcional */
+    --text: #f5f5f5;            /* Texto claro principal (marfil suave) */
+    --text-soft: #b0b0b0;       /* Texto secundario gris claro */
+    --muted: #6a6a6a;           /* Texto atenuado/metadatos */
+    --border: #1a1a1a;          /* Bordes sutiles oscuros */
+    --accent: #c9a962;          /* Dorado base sofisticado */
+    --accent-light: #d4b978;    /* Dorado claro para efectos o destacados */
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    font-size:17px;
-    line-height:1.75;
-    letter-spacing:-0.01em;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 17px;
+    line-height: 1.75;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
-.container{
-    width:100%;
-    max-width:1100px;
-    margin:0 auto;
-    padding:0 32px;
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
 }
 
-.container.narrow{
-    max-width:820px;
+.container.narrow {
+    max-width: 820px;
 }
 
 /* TYPOGRAPHY */
 
-h1{
-    font-family:"Cormorant Garamond",Georgia,serif;
-    font-weight:500;
-    font-size:4.25rem;
-    line-height:1.05;
-    letter-spacing:-0.03em;
-    color:var(--text); /* CORREGIDO: Ahora cambia automáticamente a blanco/gris claro */
-    margin:18px 0 18px;
+h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    font-size: 4.25rem;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: var(--text); /* Cambiado de marrón oscuro a blanco marfil */
+    margin: 18px 0 18px;
 }
 
-h2{
-    font-family:"Inter",sans-serif;
-    font-size:1.3rem;
-    font-weight:500;
-    color:var(--text);
-    margin:52px 0 10px;
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text);
+    margin: 52px 0 10px;
 }
 
-p{
-    color:var(--text-soft);
-    margin-bottom:16px;
+p {
+    color: var(--text-soft);
+    margin-bottom: 16px;
 }
 
-.section-number{
-    display:block;
-    font-size:.75rem;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    color:var(--accent); /* OPTIMIZADO: El indicador pasa a dorado premium sobre fondo oscuro */
-    margin-bottom:22px;
+.section-number {
+    display: block;
+    font-size: .75rem;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--accent); /* Cambiado a dorado para jerarquía de marca */
+    margin-bottom: 22px;
 }
 
-a{
-    color:var(--text);
-    text-decoration:none;
-    border-bottom:1px solid var(--border); /* CORREGIDO: El borde inferior ahora es oscuro y sutil */
-    transition:.25s ease;
+a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: .25s ease;
 }
 
-a:hover{
-    color:var(--accent);
-    border-bottom-color:var(--accent);
+a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
 }
 
 /* HEADER */
 
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:28px 36px;
-    background:var(--bg);
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 36px;
+    background: var(--bg);
 }
 
-.logo{
-    font-family:"Cormorant Garamond",serif;
-    font-size:1.5rem;
-    letter-spacing:.18em;
-    color:var(--text);
+.logo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    letter-spacing: .18em;
+    color: var(--text);
+}
+.logo img {
+    display: block;
+    filter: invert(1);          /* Convierte el fondo blanco en negro y las líneas oscuras en claras */
+    mix-blend-mode: screen;     /* Sincroniza y fusiona perfectamente cualquier residuo claro con el fondo oscuro */
 }
 
-.header nav ul{
-    display:flex;
-    gap:26px;
-    list-style:none;
+.header nav ul {
+    display: flex;
+    gap: 26px;
+    list-style: none;
 }
 
-.header nav a{
-    border:none;
-    color:var(--text-soft); /* CORREGIDO: Los menús cambian a gris claro para ser legibles */
-    font-size:.82rem;
-    font-weight:500;
-    letter-spacing:.12em;
-    text-transform:uppercase;
+.header nav a {
+    border: none;
+    color: var(--text-soft); /* Cambiado de #555 gris oscuro a var(--text-soft) gris claro */
+    font-size: .82rem;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
 }
 
-.header nav a:hover{
-    color:var(--accent); /* OPTIMIZADO: Al pasar el cursor por el menú se ilumina en dorado */
+.header nav a:hover {
+    color: var(--accent); /* Pasa a dorado al hacer hover en el menú */
 }
 
 /* HERO */
 
-.hero{
-    padding:140px 0 110px;
+.hero {
+    padding: 140px 0 110px;
 }
 
-.hero-subtitle{
-    font-size:1.18rem;
-    color:var(--text-soft); /* CORREGIDO: Subtítulos del home legibles en modo oscuro */
-    max-width:720px;
-    margin-bottom:18px;
+.hero-subtitle {
+    font-size: 1.18rem;
+    color: var(--text-soft); /* Ajustado para legibilidad en fondo oscuro */
+    max-width: 720px;
+    margin-bottom: 18px;
 }
 
 /* CONTENT */
 
-.section{
-    padding:40px 0 90px;
+.section {
+    padding: 40px 0 90px;
 }
 
 /* FOOTER */
 
-footer{
-    border-top:1px solid var(--border);
-    padding:60px 0;
-    text-align:center;
-    color:var(--muted); /* CORREGIDO: Texto de copyright adaptado a la paleta */
-    font-size:.85rem;
+footer {
+    border-top: 1px solid var(--border);
+    padding: 60px 0;
+    text-align: center;
+    color: var(--muted); /* Cambiado a var(--muted) para que no compita en brillo */
+    font-size: .85rem;
 }
 
 /* RESPONSIVE */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-    body{
-        font-size:16px;
+    body {
+        font-size: 16px;
     }
 
-    .header{
-        flex-direction:column;
-        gap:18px;
-        padding:24px;
+    .header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 24px;
     }
 
-    .header nav ul{
-        flex-direction:column;
-        align-items:center;
-        gap:12px;
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
 
-    .hero{
-        padding:90px 0 70px;
+    .hero {
+        padding: 90px 0 70px;
     }
 
-    h1{
-        font-size:2.9rem;
+    h1 {
+        font-size: 2.9rem;
     }
 
-    .container{
-        padding:0 22px;
+    .container {
+        padding: 0 22px;
     }
 
-    .container.narrow{
-        max-width:100%;
+    .container.narrow {
+        max-width: 100%;
     }
 }
 
-/* LOGO FIXES */
+/* Quitar la línea inferior del enlace que contiene al logo */
 .header .logo, 
 .header a:has(img),
 a.logo {
     border-bottom: none !important;
-    text-decoration: none !important;
-    box-shadow: none !important;
 }
 
 .header .logo:hover, 
@@ -209,3 +212,4 @@ a.logo {
 a.logo:hover {
     border-bottom: none !important;
 }
+
