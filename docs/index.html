@@ -6,26 +6,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PhD. Hernán Cornejo</title>
-    <!-- Etiquetas de idioma para SEO (Hreflang) -->
+    <title>Dr. Hernán Cornejo</title>
     <link rel="alternate" hreflang="es" href="https://phdhcornejo.github.io/web/es/" />
     <link rel="alternate" hreflang="en" href="https://phdhcornejo.github.io/web/en/" />
     <link rel="alternate" hreflang="x-default" href="https://phdhcornejo.github.io/web/" />
 
-    <meta name="description" content="Sitio oficial del PhD. Hernán Cornejo. Academic and professional portfolio.">
+    <meta name="description" content="Sitio oficial del Dr. Hernán Cornejo. Academic and professional portfolio.">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#0a0a0a">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
 
     <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #b0b0b0;
+            --accent-gold: #c9a962;
+            --accent-gold-light: #d4b978;
+        }
 
         body {
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #ffffff;
-            color: #111;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
             font-family: "Inter", sans-serif;
+            margin: 0;
         }
 
         .landing {
@@ -35,8 +50,11 @@
         .name {
             font-family: "Cormorant Garamond", serif;
             font-size: clamp(2.5rem, 5vw, 5rem);
-            letter-spacing: -0.02em;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            line-height: 1.1;
             margin-bottom: 60px;
+            color: var(--text-primary);
         }
 
         .lang {
@@ -47,23 +65,28 @@
 
         .lang a {
             text-decoration: none;
-            color: #111;
-            font-size: 1rem;
-            letter-spacing: 0.2em;
-            transition: opacity 0.3s ease;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.25em;
+            transition: color 0.4s ease, transform 0.3s ease;
+            display: inline-block;
         }
 
         .lang a:hover {
-            opacity: 0.5;
+            color: var(--accent-gold);
+            transform: translateY(-1px);
         }
 
         .small {
-            margin-top: 40px;
-            font-size: 0.8rem;
-            color: #666;
-            letter-spacing: 0.1em;
+            margin-top: 50px;
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: var(--accent-gold);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            opacity: 0.85;
         }
-
     </style>
 
 </head>
@@ -72,20 +95,20 @@
 
     <main class="landing">
 
-        <div class="name">
+        <h1 class="name">
             PhD.<br>HERNÁN<br>CORNEJO
-        </div>
+        </h1>
 
-        <div class="lang">
+        <nav class="lang">
 
             <a href="es/index.html">ESPAÑOL</a>
 
             <a href="en/index.html">ENGLISH</a>
 
-        </div>
+        </nav>
 
         <div class="small">
-            Research · Strategy · Leadership
+            Research · Strategy · Leadership · Technology  
         </div>
 
     </main>
