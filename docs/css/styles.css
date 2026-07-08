@@ -212,4 +212,9 @@ a.logo {
 a.logo:hover {
     border-bottom: none !important;
 }
-
+/* Fuerza a que el fondo del logo se mimetice con el negro de la web */
+.header nav img,
+.header a img,
+.logo img {
+    mix-blend-mode: lighten;
+}
