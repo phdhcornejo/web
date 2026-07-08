@@ -212,10 +212,4 @@ a.logo {
 a.logo:hover {
     border-bottom: none !important;
 }
-/* Filtro definitivo para limpiar el fondo del logo */
-.header img, 
-.logo img,
-[src*="untitled.png"] {
-    filter: screen;
-    mix-blend-mode: screen !important;
-}
+
